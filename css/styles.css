@@ -91,15 +91,41 @@ button{
 
 /* Base styles*/
 .section{
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    
 }
  
+
+/* Base styles for small devices*/
 .container{
-    width: 1158px;
+    min-width: 320px;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*Tablet screen*/
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+/*Desktop screen*/
+@media screen and (min-width: 1158px) {
+    .container{
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+
+    .section{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .card-set{
@@ -375,12 +401,57 @@ header{
 }
 
 .team{
-    display: flex;
+   
+    /* display: flex;
     padding: 0px 0px 32px 0px;
 
     justify-content: center;
     align-items: center;
+    gap: 24px; */
+}
+
+@media only screen and (min-width: 768px) {
+   .team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   {
     gap: 24px;
+  }
+}
+
+.team-list{
+    width: 264px;
+    
+   
+}
+
+@media only screen and (max-width: 768px) {
+   .team-list:not(:last-child){
+    margin-bottom: 72px;
+    
+}
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    flex-basis: calc((100%-24px)/2);
+    
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .team-list {
+      flex-basis: calc((100%-3*24px)/4);
+    }
+  }
+
 }
 
 .team-border{
@@ -394,6 +465,7 @@ header{
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 
 .paragraph-team{
     text-align: center;
@@ -447,8 +519,8 @@ header{
 /* Section four - customers*/
 
 .section-four{
-    padding-top: 120px; 
-    padding-bottom: 120px;
+    padding-top: 96px; 
+    padding-bottom: 96px;
 }
 
 .customers-title{
@@ -459,11 +531,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 16px;
 }
 
 .conteiner-icon-customers{
-
+    flex-basis: calc((100%-16px)/2);
 }
 
 .icon-customers{
