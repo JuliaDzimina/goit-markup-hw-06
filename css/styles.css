@@ -374,6 +374,13 @@ header{
     padding-bottom: 8px;
     }
 
+.benefits{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px; */
+ }   
+
 .icon-benefits{
     display: flex;
    align-items: center;
@@ -383,24 +390,41 @@ header{
    padding: 24px 100px;
    margin-bottom: 8px;
    border-radius: 4px;
-
-
 }
 
-.benefits{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+@media only screen and (max-width: 1157.98px) {
+    .icon-benefits{
+    display: none;
+  }
 }
+
+
 
 .benefitsn-list{
-    width: 264px;
+   
+}
+
+@media only screen and (min-width: 1158px) {
+  .benefitsn-list{
+      max-width: 264px;
+  } 
+    
+  
 }
 
 .paragraph{
-
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px
 }
+
+@media only screen and (min-width: 1158hpx) {
+    .paragraph{
+  font-weight: 400;
+  }
+}
+
 
 .second-title{
     font-weight: 700;
@@ -413,14 +437,31 @@ header{
 }
 
 .section-one-title{
+    color: var(--logo-studio-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; 
+    letter-spacing: 0.72px;
     margin-bottom: 8px;
+  
+}
+
+@media only screen and (min-width: 768px) {
+    .section-one-title{
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .section-one-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--secondry-brand-color);
-    
+  }
 }
+
 
 /*section two*/
 @media only screen and (max-width: 1157.98px) {
