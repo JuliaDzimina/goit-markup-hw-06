@@ -375,11 +375,19 @@ header{
     }
 
 .benefits{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px; */
- }   
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+ } 
+ 
+ @media only screen and (min-width: 768px) {
+    .benefits{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 72px 24px;
+   }
+ }
 
 .icon-benefits{
     display: flex;
@@ -403,10 +411,18 @@ header{
 .benefitsn-list{
    
 }
+@media only screen and (min-width: 768px) {
+    .benefitsn-list{
+   max-width: 356px;
+  }
+}
+
+
 
 @media only screen and (min-width: 1158px) {
   .benefitsn-list{
-      max-width: 264px;
+    max-width: 264px;
+    m
   } 
     
   
@@ -419,7 +435,7 @@ header{
     letter-spacing: 0.32px
 }
 
-@media only screen and (min-width: 1158hpx) {
+@media only screen and (min-width: 1158px) {
     .paragraph{
   font-weight: 400;
   }
@@ -492,8 +508,6 @@ header{
     background-color: var(--cloud-color);
     padding: 120px 0;
 }
-
-
 
 
 .team-title{
