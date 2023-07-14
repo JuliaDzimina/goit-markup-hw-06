@@ -102,11 +102,12 @@ button{
 
 /* Base styles*/
 .section{
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     
 }
  
+
 
 /* Base styles for small devices*/
 .container{
@@ -132,10 +133,9 @@ button{
         padding-left: 15px;
         padding-right: 15px; 
     }
-
     .section{
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -315,7 +315,7 @@ header{
 
 
 .section-one{
-    padding-top: 120px;
+    
 }
     
 
@@ -422,7 +422,7 @@ header{
 @media only screen and (min-width: 1158px) {
   .benefitsn-list{
     max-width: 264px;
-    m
+    
   } 
     
   
@@ -487,7 +487,10 @@ header{
 }
 
 @media only screen and (min-width: 1158px) {
-  .work-title{
+ .section-two{
+      padding-top: 0;
+  } 
+    .work-title{
      /* padding-bottom: 72px;*/
      margin-bottom: 72px;
   }
@@ -506,7 +509,7 @@ header{
 
 .section-team{
     background-color: var(--cloud-color);
-    padding: 120px 0;
+    
 }
 
 
