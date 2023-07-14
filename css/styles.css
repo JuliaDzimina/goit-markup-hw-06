@@ -643,8 +643,7 @@ header{
 /* Section four - customers*/
 
 .section-four{
-    padding-top: 96px; 
-    padding-bottom: 96px;
+   
 }
 
 .customers-title{
@@ -657,17 +656,27 @@ header{
     align-items: center;
     justify-content: center;
     row-gap: 72px;
-    column-gap: 16px;
-    
+    column-gap: 16px;   
 }
 
 .conteiner-icon-customers{
-    flex-basis: calc((100%-16px)/2);
+    flex-basis: calc((100% - 16px) / 2);
 }
 
 @media only screen and (min-width: 768px) {
     .conteiner-icon-customers{
-        flex-basis: calc((100%-48px)/3);
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .customers{
+        row-gap: 72px;
+        column-gap: 24px;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+    .conteiner-icon-customers{
+        flex-basis: calc((100% - 8*24px) / 6);
     }
 }
 
@@ -683,13 +692,20 @@ header{
     align-items: center;
     justify-content: center;
     counter-reset: var(--lightslate);
-    padding: 16px 32px;
-    width: 168px;
+    padding: 16px 40px;
+    max-width: 190px;
     height: 88px;
     border-radius: 4px;
     color: var(--lightslate);
     border: 1px solid var(--lightslate, #8E8F99);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .customers-link{
+      max-width: 168px;
+      padding: 16px 32px;
+    }
   }
 
 
