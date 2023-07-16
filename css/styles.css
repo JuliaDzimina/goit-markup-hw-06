@@ -150,6 +150,9 @@ button{
     width: calc((100%-var(--indent)*(var(--items-1)))/var(--items));
 }
 
+
+
+
 /**
   |============================
   | Header styles
@@ -295,11 +298,19 @@ header{
 }
 
 
+/**
+  |============================
+  | MAIN
+  |============================
+*/
 
 
+/**
+  |============================
+  | hero section
+  |============================
+*/
 
-/*main*/
-/*hero section*/
 
 .hero{
     background-color: var(--secondry-brand-color);
@@ -363,7 +374,13 @@ header{
     background-color: var(--hover-focus-color);
 }
 
-/* section one*/
+
+/**
+  |============================
+  | section one
+  |============================
+*/
+
 
 .third-title{
     font-weight: 500;
@@ -479,7 +496,12 @@ header{
 }
 
 
-/*section two*/
+/**
+  |============================
+  | Section two - What Are We Doing
+  |============================
+*/
+
 @media only screen and (max-width: 1157.98px) {
   .section-two{
       display: none;
@@ -505,7 +527,12 @@ header{
   } 
 }
 
-/*Section three - TEAM*/
+/**
+  |============================
+  | Section three - TEAM
+  |============================
+*/
+
 
 .section-team{
     background-color: var(--cloud-color);
@@ -721,8 +748,11 @@ header{
     color: var(--ocean);
   }
 
-
-  /*FOOTER*/
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
 
 .footer{
     background-color: var(--secondry-brand-color);
@@ -914,8 +944,11 @@ header{
 }
     
 
-/*PAGE PORTFOLIO*/
-
+/**
+  |============================
+  | PAGE PORTFOLIO
+  |============================
+*/
 
 .button-portfolio{
     font-weight: 500;
@@ -949,7 +982,31 @@ header{
     padding-bottom: 120px;
 }
 
+.img-portfolio{
+    width: 100%;
+}
+
+.gallery-portfolio{
+    --indent: 48px;
+    --items: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery-portfolio{
+        --indent: 24px;
+        --items: 2;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .gallery-portfolio{
+        --indent: 24px;
+        --items: 3;
+    }
+}
+
 .gallery-list{
+    width: 396px;
     background-color: var(--drand-white-color);
    overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
@@ -960,6 +1017,17 @@ header{
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+@media only screen and (min-width: 768px) {
+    .gallery-list{
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .gallery-list{
+    width: 360px;
+  }
+}
 
 .meny-portfolio{
     
@@ -972,7 +1040,7 @@ header{
 
 .border-portfolio{
     display: flex;
-    width: 360px;
+    width: 100%;
     padding: 32px 16px;
     flex-direction: column;
     align-items: flex-start;
@@ -984,6 +1052,9 @@ header{
     background: var(--drand-white-color, #FFF);
     
 }
+
+
+
 
 .title-gallery{
     margin-bottom: 8px 
@@ -1027,9 +1098,8 @@ header{
    
 }
 .wrapper-img{
-     position: relative;
+    position: relative;
     width: calc((100%-var(--indent)*(var(--items-1)))/var(--items));
-  
     overflow: hidden;
 }
 
