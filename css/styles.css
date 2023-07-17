@@ -1337,20 +1337,14 @@ header{
 
 
 .menu-toggle {
-    min-height: 8px;
-    min-width: 8px;
+   
     display: flex;
     align-items: center;
     justify-content: center;
-  
     padding: 0;
     background-color: transparent;
     border: none;
     outline: none;
-    border-radius: 50%;
-    border-color: var(--cornflowe);
-    
-    
   }
 
   .menu-toggle-icon{
@@ -1367,6 +1361,25 @@ header{
   .menu-toggle:hover,
   .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+  .menu-toggle-icon-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-color: var(--cornflowe);
+    
+    
+    
   }
   
   .menu-container {

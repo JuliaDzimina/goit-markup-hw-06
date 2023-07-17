@@ -63,12 +63,12 @@
 
    <main>
      <!--Hero-->
-     <!-- <section class="hero section"> 
+     <section class="hero section"> 
         <div class="container">
             <h1 class="main-title">Effective Solutions for Your Business</h1>
             <button class="button-title" type="button" data-modal-open> Order Service </button>
         </div>
-     </section> -->
+     </section>
 
      <!--Section 1-->
      <section class="section-one section">
@@ -126,15 +126,33 @@
             <h2 class="second-title work-title"> What are we doing </h2>
             <ul class="list work-list">
                 <li class="work-image">
-                    <img src="./images/Section-2/Monitor.jpg" alt="Monitor" height="300" width="360"/>
+                    <img 
+                    srcset="
+                    ./images/Section-2/img2-1.jpg 1x,
+                    ./images/Section-2/img2-1@2x.jpg 2x"
+                    src="./images/Section-2/img2-1.jpg" 
+                    alt="Monitor" 
+                    height="300"  width="360"/>
                 </li>
                 <li class="work-image">
-                    <img src="./images/Section-2/Chat.jpg" alt="Chat" height="300" width="360"/>
+                    <img 
+                    srcset="
+                    ./images/Section-2/img2-2@1x.jpg 1x,
+                    ./images/Section-2/img2-2@2x.jpg 2x"
+                    src="./images/Section-2/img2-2@1x.jpg" 
+                    alt="Chat" 
+                    height="300" width="360"/>
                 </li>
                 <li class="work-image">
-                    <img src="./images/Section-2/Mobile.jpg" alt="Mobile" height="300" width="360"/>
+                    <img 
+                    srcset="
+                    ./images/Section-2/img2-3@1x.jpg 1x,
+                    ./images/Section-2/img2-3@2x.jpg 2x"
+                    src="./images/Section-2/img2-3@1x.jpg" 
+                    alt="Mobile" 
+                    height="300" width="360"/>
                 </li>
-            </ul>
+            </ul> 
         </div>
 
      </section>
@@ -145,7 +163,13 @@
             <h2 class="second-title team-title"> Our Team</h2>
             <ul class="list team">
                 <li class="team-list">
-                    <img  src="./images/Section-3/Mark.jpg" alt="Mark Guerrero" height="260" width="264"/>
+                    <img  
+                    srcset="
+                    ./images/team/img-1@1x.jpg 1x,
+                    ./images/team/img-1@2x.jpg 2x "
+                    src="./images/team/img-1@1x.jpg" 
+                    alt="Mark Guerrero" 
+                    height="260" width="264"/>
                     <div class="team-border">
                         <h3 class="name-team">Mark Guerrero</h3>
                         <p class="paragraph-team"> Product Designer</p>
@@ -183,7 +207,13 @@
                 </li>
 
                 <li class="team-list">
-                    <img src="./images/Section-3/Tom.jpg" alt="Tom Ford" height="260" width="264"/>
+                    <img 
+                    srcset="
+                    ./images/team/img-2@1x.jpg 1x,
+                    ./images/team/img-2@2x.jpg 2x "
+                    src="./images/team/img-2@1x.jpg" 
+                    alt="Tom Ford" 
+                    height="260" width="264"/>
                     <div class="team-border">
                         <h3 class=" name-team"> Tom Ford</h3>
                         <p class="paragraph-team" > Frontend Developer</p>
@@ -221,7 +251,13 @@
                 </li>
 
                 <li class="team-list">
-                    <img src="./images/Section-3/Camila.jpg" alt="Camila Garcia" height="260" width="264"/>
+                    <img 
+                    srcset="
+                    ./images/team/img-3@1x.jpg 1x,
+                    ./images/team/img-3@2x.jpg 2x "
+                    src="./images/team/img-3@1x.jpg"
+                    alt="Camila Garcia" 
+                    height="260" width="264"/>
                     <div class="team-border">
                         <h3 class="name-team"> Camila Garcia</h3>
                         <p class="paragraph-team"> Marketing</p>
@@ -259,7 +295,13 @@
                 </li>
 
                 <li class="team-list">
-                    <img src="./images/Section-3/Daniel.jpg" alt="Daniel Wilson" height="260" width="264"/>
+                    <img 
+                    srcset="
+                    ./images/team/img-4@1x.jpg 1x,
+                    ./images/team/img-4@2x.jpg 2x "
+                    src="./images/team/img-4@1x.jpg" 
+                    alt="Daniel Wilson" 
+                    height="260" width="264"/>
                     <div class="team-border">
                         <h3 class=" name-team"> Daniel Wilson</h3>
                         <p class="paragraph-team">UI Designer</p>
@@ -508,19 +550,9 @@
 <!--Mobile menu-->
 <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
-      <svg
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-      >
-        <path class="mobile-menu-btn"
-          fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
+        <svg class="menu-toggle-icon-close" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
     </button>
 
     
