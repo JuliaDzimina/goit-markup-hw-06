@@ -973,7 +973,7 @@ header{
     letter-spacing: 0.04em;
     color: var(--brand-iris-color);
     background-color: var(--cloud-color);
-    padding: 12px 24px;
+    padding: 8px 16px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -983,6 +983,14 @@ header{
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+
+@media only screen and (min-width: 768px) {
+    .button-portfolio{
+        padding: 12px 24px;
+  }
+}
+
+
 .button-portfolio:hover,
 .button-portfolio:focus{
     background-color: var(--hover-focus-color);
@@ -991,12 +999,27 @@ header{
 }
 
 .section-portfolio{
-    padding-top: 96px; 
-    padding-bottom: 120px;
+    padding-top: 48px; 
+    padding-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-portfolio{
+        padding-top: 64px; 
+        padding-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-portfolio{
+        padding-top: 100px; 
+        padding-bottom: 120px;
+  }
 }
 
 .img-portfolio{
     width: 100%;
+    height: auto;
 }
 
 .gallery-portfolio{
@@ -1044,11 +1067,27 @@ header{
 
 .meny-portfolio{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px
+    
+    gap: 16px 24px;
+    margin-bottom: 48px;
 }
+
+@media only screen and (min-width: 768px) {
+    .meny-portfolio{
+        justify-content: center;
+        margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .meny-portfolio{
+        
+        margin-bottom: 72px;
+  }
+}
+
 
 .border-portfolio{
     display: flex;
